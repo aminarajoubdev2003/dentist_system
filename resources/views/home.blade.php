@@ -7,17 +7,17 @@
 @stop
 
 @section('content')
-<form method='post' action="{{route('filtered-ticket')}}">
+<form method='post' action="">
 {{csrf_field()}}
 
-<center><h1>Availble Tickets</h1><center><br>
+{{--<center><h1>Availble Tickets</h1><center><br>
 
 <div class="form-group col-md-4">
-      <label for="">City</label>
-      <select name='city' class="form-control">
-@foreach($city as $value){
+      <label for=""></label>
+      <select name='' class="form-control">
+@foreach( ){
 
-<option value="{{$value->id}}">{{$value->name}}
+<option value="{{}">{{}}
 </option>
 }
 @endforeach
@@ -26,29 +26,29 @@
 </select>
 </div>
 <div class="form-group col-md-4">
-      <label for="">Date Start</label>
+      <label for=""></label>
       <input type="text" class="form-control" name="date">
     </div>
-    <button type="submit" class="btn btn-primary">Filter</button>
+    <button type="submit" class="btn btn-primary"></button>
 
 </form>
 
  
-<button type="button" class="btn btn-warning"><a href="{{route('add-ticket')}}">Add ticket</a></button>
+<button type="button" class="btn btn-warning"><a href="{{}}"></a></button>
 
 <div class="list-group">
-@foreach($ticket as $value)
+@foreach( )
 
-<li class="list-group-item"><small>Flight</small>  <h4>{{$value->city->name}}   <small>on lines</small>   <bold> {{$value->company->title}} </bold><small>At</small>     {{$value->date_s}} </h4> <br>
+<li class="list-group-item"><small></small>  <h4>{{}}   <small></small>   <bold> {{}} </bold><small>At</small>     {{$value->date_s}} </h4> <br>
 <a href="{{route('add-book',['id'=>$value->id])}}">Book now</a >
 
-<pre><a href="{{route('delete-ticket',['ticket'=>$value])}}">Delete ticket</a></pre></li>
+<pre><a href="{{}}"></a></pre></li>
 
 
 
 @endforeach
 </ul>
-
+--}}
 
 @stop
 
