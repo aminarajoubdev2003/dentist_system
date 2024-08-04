@@ -312,7 +312,7 @@ return [
         ],
         // do the link here just copy the arrays and past again and cahnge text and url to what u want
         //----------------------Customer Pages--------------------------------//
-        ['header' => 'customers'],
+        ['header' => 'Specializations'],
         [
             'text'        => 'customers',
             'url'         => 'customers/all',
@@ -332,7 +332,7 @@ return [
             'icon_color' => 'blue',
         ],
         //-----------------------end of Customer Pages------------------------//
-        ['header' => 'Tickets'],
+        ['header' => 'Doctors'],
         [
             'text' => 'Availble tickets',
             'url'  => '/tickview',
@@ -346,14 +346,14 @@ return [
             'icon' => 'far fa-fw fa-file',
             'icon_color' => 'yellow',
         ],
-        ['header' => 'Bookings'],
+        ['header' => 'Patients'],
         [
             'text' => 'Booking List',
             'url'  => '/booksview',
             'icon' => 'far fa-fw fa-file',
             'icon_color' => 'red',
         ],
-        [
+        /*[
             'text'    => '',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
@@ -390,8 +390,8 @@ return [
                     'url'  => '#',
                 ],
             ],
-        ],
-        ['header' => 'hotels'],
+        ],*/
+        ['header' => 'Appointments'],
         [
             'text' => ' All Hotels',
             'url'  => '/hotelindex',
@@ -411,7 +411,7 @@ return [
             'icon_color' => 'green',
         ],
           //----------------------Companies Pages--------------------------------//
-       ['header' => 'Companies'],
+       ['header' => 'Treatments'],
 
        [
            'text'        => 'add Company',
@@ -424,16 +424,24 @@ return [
            'icon'        => 'far fa-fw fa-file',
        ],
        //-----------------------end of Companies Pages------------------------//
-       ['header'=>'Cities'],
+       ['header'=>'Reviews'],
        [
-          'text' => 'all cities',
-          'url' => 'city/index',
+          'text' => 'all reviews',
+          'url' => 'reviews/all',
           'icon' =>'far fa-fw fa-file',
+          'icon_color' => 'red',
        ],
        [
-        'text' => 'add city',
-        'url' => 'city/create',
+        'text' => 'add review',
+        'url' => 'review/add/form',
         'icon' =>'far fa-fw fa-file',
+        'icon_color' => 'green',
+     ],
+     [
+        'text' => 'show avarage',
+        'url' => 'average/rate/form',
+        'icon' =>'far fa-fw fa-file',
+        'icon_color' => 'yellow',
      ],
         ['header' => 'labels'],
         [
